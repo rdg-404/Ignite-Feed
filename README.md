@@ -1,2 +1,3 @@
-# This_is_ReactJS
-Fundamentos de ReactJS da trilha 2022 do Ignite da Rocketseat
+<h1 align="center">ReactJS - Ignite Rocketseat</h1>
+
+Projeto criado usando [Vite](https://vitejs.dev/)
