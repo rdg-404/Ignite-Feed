@@ -1,5 +1,10 @@
 .header {
-    background: var(--gray-700);
-    height: 80px;
-    color: var(--white);
+    background: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0;
+}
+
+.header img {
+    height: 2rem;
 }
