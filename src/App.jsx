@@ -15,7 +15,10 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post/>
+          <div>
+            <Post />
+            <Post />
+          </div> 
         </main>
       </div>
     </div>
