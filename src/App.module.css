@@ -9,3 +9,15 @@
     gap: 2rem;
     align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+
+    /*altera toda as fonts  que utilizam rem*/
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
