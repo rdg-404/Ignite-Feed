@@ -13,3 +13,13 @@ Projeto criado usando [Vite](https://vitejs.dev/)
 ```
 
 Lib de icones para a aplicação [aqui](https://github.com/phosphor-icons/phosphor-home)
+
+
+``` css
+  
+  npm i date-fns
+  
+```
+
+
+Formatar datas em JavaScript
