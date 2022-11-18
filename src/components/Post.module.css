@@ -82,7 +82,7 @@
     height: 6rem;
     padding: 1rem;
     border-radius: 0.25rem;
-    color: vart(--gray-100);
+    color: var(--gray-100);
     line-height: 1.4;
     margin-top: 1rem;
 }
