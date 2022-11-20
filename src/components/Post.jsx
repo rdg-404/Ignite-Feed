@@ -9,8 +9,13 @@ import styles from './Post.module.css';
 
 export function Post({author, publishedAt, content}){
 
-    const [comments, setComments] = useState([1,2]);
+    const [comments, setComments] = useState([
+        "post muito bacana"
+    ]);
 
+
+
+    const [newCommentText, setNewCommentText] = useState('');
 
     //formatado que será mostrado a data
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
@@ -28,7 +33,13 @@ export function Post({author, publishedAt, content}){
 
         event.preventDefault();  /// permanecer na msm pagina após o envio do form
 
-        setComments([...comments, comments.length + 1]); //atualiza a lista de comentarios
+        setComments([...comments, newCommentText]); //atualiza a lista de comentarios
+
+        setNewCommentText('');
+    }
+
+    function handleNewCommentChange(){
+        setNewCommentText(event.target.value)
     }
 
 
@@ -62,7 +73,10 @@ export function Post({author, publishedAt, content}){
                 <strong>Deixe seu feedback</strong>
 
                 <textarea 
+                    name='comment'
                     placeholder='Deixe seu comentário'
+                    value={newCommentText}
+                    onChange={handleNewCommentChange}
                 />
 
                 <footer>
@@ -73,7 +87,7 @@ export function Post({author, publishedAt, content}){
             <div className={styles.commentList}>
                 {/* percorre o array e retorna para cada posicao um component */}
                 {comments.map(comment => {
-                    return <Comment/>
+                    return <Comment content={comment}/>
                 })}
             </div>
         </article>
