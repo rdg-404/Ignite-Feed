@@ -1,5 +1,6 @@
 import { format, formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
+import { LineSegment } from 'phosphor-react';
 import { useState } from 'react';
 
 
@@ -60,10 +61,10 @@ export function Post({author, publishedAt, content}){
             <div className={styles.content}>
                 {content.map(item => {
                     if(item.type === 'paragraph'){
-                        return <p>{item.content}</p>;
+                        return <p key={item.content}>{item.content}</p>;
                     }
                     else if (item.type === 'link'){
-                        return <p><a href="#">{item.content}</a></p>
+                        return <p key={item.content}><a href="#">{item.content}</a></p>
                     }   
                 })}
             </div>
@@ -87,7 +88,7 @@ export function Post({author, publishedAt, content}){
             <div className={styles.commentList}>
                 {/* percorre o array e retorna para cada posicao um component */}
                 {comments.map(comment => {
-                    return <Comment content={comment}/>
+                    return <Comment key={comment} content={comment}/>
                 })}
             </div>
         </article>
