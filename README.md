@@ -31,4 +31,37 @@ Template no [Figma](https://www.figma.com/file/w3wk6JDgUalKlXjdfiAIUR/Ignite-Fee
 
 
 
+
+
+# Key no React
+
+## Por que única?
+
+3 momentos em que um componente é renderizado, novamente, no React.
+
+1 - Quando o estado é alterado
+2 - Quando a propriedade altera
+3 - Quando um componente pai renderiza novamente
+
+
+
+-----
+1, 2, 3, 4
+-------
+
+1, 2, 3, 4, 5
+-------
+
+Ignora os já existentes e renderiza somente os novos
+
+
+
+## Por que não utilizar o índice de array como chave
+
+``` js
+  const posts = [1, 4, 3, 2]
+  // 1, 4, 3, 2
+```
+Alterando a posição do indice o react precisa renderizar tudo de novo, com a chave ele não precisa renderizar pq torna o elemento único
+
 Projeto desenvolvido na trilha Ignite da Rocketseat :purple_heart:
