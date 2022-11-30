@@ -44,6 +44,10 @@ export function Post({author, publishedAt, content}){
     }
 
 
+    function deleteComment (comment) {
+        console.log(`Deletar comentario ${comment}`)
+    }
+
     return (
         <article className={styles.post}>
             <header>
@@ -88,7 +92,13 @@ export function Post({author, publishedAt, content}){
             <div className={styles.commentList}>
                 {/* percorre o array e retorna para cada posicao um component */}
                 {comments.map(comment => {
-                    return <Comment key={comment} content={comment}/>
+                    return (
+                        <Comment 
+                            key={comment} 
+                            content={comment} 
+                            onDeleteComment={deleteComment} //props enviadas para o component comment
+                        />
+                    )
                 })}
             </div>
         </article>
