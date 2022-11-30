@@ -44,8 +44,13 @@ export function Post({author, publishedAt, content}){
     }
 
 
-    function deleteComment (comment) {
-        console.log(`Deletar comentario ${comment}`)
+    function deleteComment (commentToDelete) {
+        const commentWithoutDeleteOne = comments.filter(comment => {
+            return comment !== commentToDelete
+        })
+
+
+        setComments(commentWithoutDeleteOne)//nova lista sem o comentario deletado
     }
 
     return (
