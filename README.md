@@ -38,7 +38,7 @@ Template no [Figma](https://www.figma.com/file/w3wk6JDgUalKlXjdfiAIUR/Ignite-Fee
 
 * Deletar comentários
 
-* Dar like do comentário
+* Dar like no comentário
 
 <br><br><br><br><br>
 
