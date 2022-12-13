@@ -32,6 +32,16 @@ Template no [Figma](https://www.figma.com/file/w3wk6JDgUalKlXjdfiAIUR/Ignite-Fee
 
 <img src="src/assets/img01.png"/>
 
+<h2>Funcionalidades</h2>
+
+* Adicionar comentários 
+
+* Deletar comentários
+
+* Dar like do comentário
+
+<br><br><br><br><br>
+
 
 
 
