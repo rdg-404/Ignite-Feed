@@ -28,7 +28,7 @@ Formatar datas em JavaScript
 Template no [Figma](https://www.figma.com/file/w3wk6JDgUalKlXjdfiAIUR/Ignite-Feed-(Community)?node-id=0%3A1&t=l8ll824txsWkEvxu-0)
 
 
-# Layout do projeto
+<h1 align="center"> Layout do projeto </h1>
 
 <img src="src/assets/img01.png"/>
 
